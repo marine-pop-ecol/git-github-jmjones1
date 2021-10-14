@@ -1,0 +1,27 @@
+---
+title: "assignment 1"
+author: "Jules Jones"
+date: "14/10/2021"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+Jules Jones
+*University of Alberta* 
+__Forest Green__
+
+```{r}
+
+x = c(1,2,3)
+y = c(3,4,5)
+
+library(here)
+
+data = data.frame(x, y)
+write.csv(data, here("student-data.csv"))
+
+read.csv(here("student-data.csv"))
+
+```
+
